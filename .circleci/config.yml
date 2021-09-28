@@ -1,11 +1,11 @@
 version: 2.1
 
-#https://bit.ly/2XuO8xR______
 jobs:
   run-job:
     machine:
       image: ubuntu-2004:202101-01
     resource_class: medium
+    parallelism: 4
     steps:
       - run: 
           name: Get soure
